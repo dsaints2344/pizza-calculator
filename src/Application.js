@@ -11,13 +11,7 @@ const initialState = {
   slicesPerPerson: 2,
 };
 
-export default class ApplicationContainer extends Component {
-  render() {
-    return <Application />;
-  }
-}
-
-class Application extends Component {
+export default class Application extends Component {
   state = { ...initialState };
 
   updateNumberOfPeople = event => {
